@@ -21,33 +21,27 @@ class Confirmation extends React.Component {
     } = this.props;
     if (element && (!positionLeft || !positionTop)) {
       var {x, y} = this.getElementPosition(element);
-      var padding = {
-        left: Number.parseInt(this.getStyle(element, 'paddingLeft')),
-        right: Number.parseInt(this.getStyle(element, 'paddingRight')),
-        top: Number.parseInt(this.getStyle(element, 'paddingTop')),
-        bottom: Number.parseInt(this.getStyle(element, 'paddingBottom'))
-      }
       // windth:160 height:70
       // arrow 22x10
       switch (placement) {
         case 'top': {
-          positionLeft = x + element.clientWidth/2 - width/2 + padding.left;
-          positionTop = y - 10 - 66 + padding.top;
+          positionLeft = x + element.clientWidth/2 - width/2;
+          positionTop = y - 10 - 66;
           break;
         }
         case 'bottom': {
-          positionLeft = x + element.clientWidth/2 - width/2 + padding.left;
-          positionTop = y + 10 + padding.bottom + padding.top + element.clientHeight;
+          positionLeft = x + element.clientWidth/2 - width/2;
+          positionTop = y + 10 + element.clientHeight;
           break;
         }
         case 'left': {
-          positionLeft = x - width - 10 + padding.left;
-          positionTop = y + element.clientHeight/2 - height/2 + padding.top;
+          positionLeft = x - width - 10;
+          positionTop = y + element.clientHeight/2 - height/2;
           break;
         }
         case 'right': {
-          positionLeft = x + 10 - padding.right;
-          positionTop = y + element.clientHeight/2 - height/2 + padding.top;
+          positionLeft = x + 10 + element.clientWidth;
+          positionTop = y + element.clientHeight/2 - height/2;
           break;
         }
       }
@@ -56,13 +50,13 @@ class Confirmation extends React.Component {
     return (
       <div className="static-confirm">
         <Popover id="pop-confirm"
-          style={{width:width+'px',height:height+'px',padding:'6px'}}
+          style={{width:width+'px',height:height+'px'}}
           show={show}
           onHide={dismiss}
           placement={placement} 
           positionLeft={positionLeft} 
           positionTop={positionTop}>
-          <p style={{margin:0,padding:'.5em .3em',fontSize:'small',color:'#e83f3f'}}>{confirmation}</p>
+          <p style={{margin:0,padding:'.3em 0',fontSize:'small',color:'#e83f3f'}}>{confirmation}</p>
           <ButtonToolbar style={{paddingBottom:'6px', float:'right'}}>
             <Button bsSize="xsmall" onClick={cancel}>{cancelLabel}</Button>
             <Button bsSize="xsmall" className='button-l' bsStyle="info" onClick={proceed}>{okLabbel}</Button>
@@ -79,14 +73,6 @@ class Confirmation extends React.Component {
       e = e.offsetParent;
     }
     return { x: x, y: y };
-  }
-  getStyle(obj, attr) {
-    if(obj.currentStyle){ 
-      return obj.currentStyle[attr]; 
-    } 
-    else{ 
-      return window.getComputedStyle(obj,null)[attr]; 
-    }
   }
 }
 

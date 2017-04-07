@@ -1,6 +1,6 @@
 {
   "name": "react-popconfirm",
-  "version": "0.1.0",
+  "version": "0.0.8",
   "description": "A popover confirm dialog for react",
   "main": "lib/index.js",
   "scripts": {

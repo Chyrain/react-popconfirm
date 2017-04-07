@@ -6,6 +6,8 @@
 
 A popover confirm dialog  for react, [react-bootstrap](https://react-bootstrap.github.io/components.html#popovers) and [react-confirm](https://github.com/haradakunihiko/react-confirm) are used with.
 
+![PopConfirm](https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/popconfirm.gif)
+
 ## Usage
 
 ```js
