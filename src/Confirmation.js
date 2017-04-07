@@ -56,13 +56,13 @@ class Confirmation extends React.Component {
     return (
       <div className="static-confirm">
         <Popover id="pop-confirm"
-          style={{width:width+'px',height:height+'px'}}
+          style={{width:width+'px',height:height+'px',padding:'6px'}}
           show={show}
           onHide={dismiss}
           placement={placement} 
           positionLeft={positionLeft} 
           positionTop={positionTop}>
-          <p style={{padding:'.5em .3em',fontSize:'small',color:'#e83f3f'}}>{confirmation}</p>
+          <p style={{margin:0,padding:'.5em .3em',fontSize:'small',color:'#e83f3f'}}>{confirmation}</p>
           <ButtonToolbar style={{paddingBottom:'6px', float:'right'}}>
             <Button bsSize="xsmall" onClick={cancel}>{cancelLabel}</Button>
             <Button bsSize="xsmall" className='button-l' bsStyle="info" onClick={proceed}>{okLabbel}</Button>

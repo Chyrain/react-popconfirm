@@ -21,7 +21,7 @@
   "dependencies": {
     "react": "^0.14.7",
     "react-bootstrap": "^0.28.4",
-    "react-popconfirm": "^0.0.2",
+    "react-popconfirm": "^0.1.0",
     "react-dom": "^0.14.7"
   }
 }

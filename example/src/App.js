@@ -1,13 +1,14 @@
 import React from 'react';
-import {PopConfirm} from 'react-popconfirm';
+import PopConfirm from 'react-popconfirm';
+import {Button} from 'react-bootstrap';
 
-const handleOnClick = () => {
+const handleOnClick = (e) => {
 	PopConfirm({
 		confirmation:'Are you sure?',
 		okLabbel: 'Yes',
 		cancelLabel: 'No',
 		placement:'top',
-		element:target	// target is the element you clicked
+		element:e.target // target is the element you clicked
 		}).then(
 			(result) => {
 			// `proceed` callback
