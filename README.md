@@ -4,7 +4,7 @@
 [![downloads](https://img.shields.io/npm/dm/react-popconfirm.svg?style=flat-square)](http://npm-stat.com/charts.html?package=react-popconfirm&from=2017-04-07)
 [![MIT License](https://img.shields.io/npm/l/react-popconfirm.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-A popover confirm dialog  for react, [react-bootstrap](https://react-bootstrap.github.io/components.html#popovers) are used with.
+A popover confirm dialog  for react, [react-bootstrap](https://react-bootstrap.github.io/components.html#popovers) and [react-confirm](https://github.com/haradakunihiko/react-confirm) are used with.
 
 ## Usage
 

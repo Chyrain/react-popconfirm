@@ -1,6 +1,6 @@
 import React from 'react';
 import {Popover, Button, ButtonToolbar} from 'react-bootstrap';
-import { confirmable } from './react_confirm.js';
+import { confirmable } from './react-confirm.js';
 
 class Confirmation extends React.Component {
   render() {
@@ -56,15 +56,14 @@ class Confirmation extends React.Component {
     return (
       <div className="static-confirm">
         <Popover id="pop-confirm"
-          className="pop-confirm"
           style={{width:width+'px',height:height+'px'}}
           show={show}
           onHide={dismiss}
           placement={placement} 
           positionLeft={positionLeft} 
           positionTop={positionTop}>
-          <p>{confirmation}</p>
-          <ButtonToolbar className="fl right" style={{paddingBottom:'6px'}}>
+          <p style={{padding:'.5em .3em',fontSize:'small',color:'#e83f3f'}}>{confirmation}</p>
+          <ButtonToolbar style={{paddingBottom:'6px', float:'right'}}>
             <Button bsSize="xsmall" onClick={cancel}>{cancelLabel}</Button>
             <Button bsSize="xsmall" className='button-l' bsStyle="info" onClick={proceed}>{okLabbel}</Button>
           </ButtonToolbar>

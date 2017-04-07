@@ -1,5 +1,5 @@
 import React from 'react';
-import PopConfirm from 'react-popconfirm';
+import {PopConfirm} from 'react-popconfirm';
 
 const handleOnClick = () => {
 	PopConfirm({
