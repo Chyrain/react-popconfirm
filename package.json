@@ -1,6 +1,6 @@
 {
   "name": "react-popconfirm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A popover confirm dialog for react",
   "main": "lib/index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "url": "git+https://github.com/Chyrain/react-popconfirm.git"
   },
   "keywords": [
-    "popconfirm"
+    "popconfirm",
+    "react"
   ],
   "author": "Chyrain. <chyrain_v5kf@qq.com> (http://chyrain.com/)",
   "license": "MIT",
