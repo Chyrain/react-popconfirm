@@ -5,7 +5,7 @@
   "main": "Confirmation.js",
   "scripts": {
     "server": "node server.js",
-    "start": "webpack-dev-server --port 3030 --progress --colors",
+    "start": "webpack-dev-server --port 8080 --progress --colors",
     "build": "webpack"
   },
   "author": "",
