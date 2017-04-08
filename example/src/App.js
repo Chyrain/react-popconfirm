@@ -7,6 +7,7 @@ const OnClickLeft = (e) => {
 		confirmation:'Are you sure?',
 		okLabbel: 'Yes',
 		cancelLabel: 'No',
+		cancelStyle: 'default',
 		placement:'left',
 		element:e.target // target is the element you clicked
 		}).then(
