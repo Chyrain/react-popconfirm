@@ -23,7 +23,7 @@ import PopConfirm from 'react-popconfirm'
  *    confirmation,         // require
  *    placement = 'top',    // require
  *    okLabbel = 'Yes',     // optional (default 'Yes')
- *    cancelLabel = 'No',  // optional (default 'No')
+ *    cancelLabel = 'No',   // optional (default 'No')
  *    positionLeft,         // optional (auto calculate by element position and width,height)
  *    positionTop,          // optional (auto calculate by element position and width,height)
  *    width = 160,          // optional (default 160)
