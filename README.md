@@ -54,12 +54,13 @@ PopConfirm({
 
 ## Try example
 
-```
+```shell
+# run example, auto open browser and enable hot loader
 cd example
 npm install
-npm start //enable hot loader
+npm start
 
-// build
+# build
 npm run build
 ```
 
