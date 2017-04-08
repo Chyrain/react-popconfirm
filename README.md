@@ -59,8 +59,10 @@ PopConfirm({
 ```
 cd example
 npm install
+npm start //enable hot loader
+
+// build
 npm run build
-npm start
 ```
 
 ## License
