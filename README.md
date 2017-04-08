@@ -43,12 +43,10 @@ PopConfirm({
   (result) => {
     // `proceed` callback
     console.log('proceed called');
-    console.log(result);
   },
   (result) => {
     // `cancel` callback
     console.log('cancel called');
-    console.log(result)
   }
 )
 // nothing will be called when `dismiss` is triggered.
