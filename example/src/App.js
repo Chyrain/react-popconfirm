@@ -29,6 +29,9 @@ const OnClickRight = (e) => {
 		okLabbel: 'Yes',
 		cancelLabel: 'No',
 		placement:'right',
+		confirmationColor: '#000',
+		cancelStyle: 'link',
+		okStyle: 'link',
 		element:e.target // target is the element you clicked
 		}).then(
 			(result) => {
@@ -50,6 +53,9 @@ const OnClickTop = (e) => {
 		okLabbel: 'Yes',
 		cancelLabel: 'No',
 		placement:'top',
+		confirmationColor: '#1881d3',
+		cancelStyle: 'danger',
+		okStyle: 'success',
 		element:e.target // target is the element you clicked
 		}).then(
 			(result) => {
@@ -71,6 +77,8 @@ const OnClickBottom = (e) => {
 		okLabbel: 'Yes',
 		cancelLabel: 'No',
 		placement:'bottom',
+		confirmationColor: '#047218',
+		okStyle: 'danger',
 		element:e.target // target is the element you clicked
 		}).then(
 			(result) => {

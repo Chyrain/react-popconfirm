@@ -1,10 +1,11 @@
 {
   "name": "example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "Confirmation.js",
   "scripts": {
-    "start": "node server.js",
+    "server": "node server.js",
+    "start": "webpack-dev-server --port 3030 --progress --colors",
     "build": "webpack"
   },
   "author": "",
@@ -16,12 +17,14 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "express": "^4.13.4",
-    "webpack": "^1.12.12"
+    "webpack": "^1.12.12",
+    "open-browser-webpack-plugin": "0.0.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "react": "^0.14.7",
     "react-bootstrap": "^0.28.4",
-    "react-popconfirm": "^0.1.0",
+    "react-popconfirm": "^0.1.1",
     "react-dom": "^0.14.7"
   }
 }

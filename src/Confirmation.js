@@ -7,8 +7,11 @@ class Confirmation extends React.Component {
     var {
       okLabbel = 'Yes',
       cancelLabel = 'No',
+      okStyle = 'info',
+      cancelStyle = 'default',
       element,
       confirmation,
+      confirmationColor = '#e83f3f',
       show,
       proceed,
       dismiss,
@@ -56,10 +59,10 @@ class Confirmation extends React.Component {
           placement={placement} 
           positionLeft={positionLeft} 
           positionTop={positionTop}>
-          <p style={{margin:0,padding:'.3em 0',fontSize:'small',color:'#e83f3f'}}>{confirmation}</p>
+          <p style={{margin:0,padding:'.3em 0',fontSize:'small',color:confirmationColor}}>{confirmation}</p>
           <ButtonToolbar style={{paddingBottom:'6px', float:'right'}}>
-            <Button bsSize="xsmall" onClick={cancel}>{cancelLabel}</Button>
-            <Button bsSize="xsmall" className='button-l' bsStyle="info" onClick={proceed}>{okLabbel}</Button>
+            <Button bsSize="xsmall" bsStyle={cancelStyle} onClick={cancel}>{cancelLabel}</Button>
+            <Button bsSize="xsmall" bsStyle={okStyle} onClick={proceed}>{okLabbel}</Button>
           </ButtonToolbar>
         </Popover>
       </div>
@@ -89,7 +92,10 @@ Confirmation.propTypes = {
   positionTop: React.PropTypes.number,
   width: React.PropTypes.number,
   height: React.PropTypes.number,
-  element: React.PropTypes.object
+  element: React.PropTypes.object,
+  confirmationColor: React.PropTypes.string,
+  okStyle: React.PropTypes.string,
+  cancelStyle: React.PropTypes.string
 }
 
 export default confirmable(Confirmation);
