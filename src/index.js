@@ -10,7 +10,7 @@ const defaultConfirmation = createConfirmation(Confirmation);
  *		element,				// require
  *		confirmation,			// require
  *		placement = 'top',		// require
- *		okLabbel = '确定',		// optional
+ *		okLabel = '确定',		// optional
  *		cancelLabel = '取消',	// optional
  *		positionLeft,			// optional (auto calculate by element position and width,height)
  *		positionTop,			// optional (auto calculate by element position and width,height)
